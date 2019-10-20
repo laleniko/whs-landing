@@ -1,0 +1,392 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+body {
+    margin: 0;
+}
+.container {
+    margin-left: 36px;
+    margin-right: 36px;
+    max-width: 1166px;
+}
+
+.text-color-accent {
+    color: #FFD22E;
+}
+
+.button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 115.8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 4px;
+    background-color: #FFD22E;
+    padding: 16px 0;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+/* Form */
+.form ._h1,
+.form ._h2._warn_title,
+.form ._lbl._lbl_day,
+.form ._lbl._lbl_time,
+.form.header-bottom__form input,
+.form.header-bottom__form input[type="text"] ~ div{
+    display: none;
+}
+
+.form button[type="submit"] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 115.8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 4px;
+    background-color: #FFD22E;
+    padding: 16px 50px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.form input[type="email"],
+.form input[type="text"]{
+    height: 48px;
+    width: 48px;
+}
+
+.header {
+    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+}
+
+.header-top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header-top__time {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+}
+
+.header-center__free {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc( (100vw - 375px)/(1920 - 375) * (120 - 33) + 33px);
+    line-height: 33px;
+    color: rgba(256, 256, 256, 0.1);
+}
+
+.header-center__plan {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.4559px;
+    line-height: 26px;
+    text-align: left;
+    color: #FFD22E;
+}
+
+.header-center__how {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30.9922px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.header-bottom {
+    padding-bottom: 43px;
+}
+
+.knowledge-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    color: #000000;
+}
+
+.knowledge-item {
+    position: relative;
+    padding-top: 50px;
+}
+
+.knowledge-item:before {
+    position: absolute;
+    top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 115.8%;
+    color: #000000;
+}
+
+.knowledge-item:nth-of-type(1)::before {
+    content: '💸';
+}
+
+.knowledge-item:nth-of-type(2)::before {
+    content: '📚';
+}
+
+.knowledge-item:nth-of-type(3)::before {
+    content: '‍💻';
+}
+
+.knowledge-item:nth-of-type(4)::before {
+    content: '🏗️';
+}
+
+.knowledge-item:nth-of-type(5)::before {
+    content: '🏝️';
+}
+
+.knowledge-item:nth-of-type(6)::before {
+    content: '🎓';
+}
+
+.knowledge-item__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 115.8%;
+    color: #000000;
+}
+
+.knowledge-item__description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115.8%;
+    color: #666666;
+}
+
+/* Games */
+.games {
+    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+    padding-top: 43px;
+    padding-bottom: 50px;
+}
+
+.games__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 115.8%;
+    color: #FFFFFF;
+}
+
+.games__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 115.8%;
+    color: rgba(256, 256, 256, 0.8) ;
+}
+
+.games__img {
+    width: 100%;
+}
+
+.games__button {
+    width: 100%;
+}
+
+/* Fow whom */
+
+.for-whom__top {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    color: #000000;
+}
+
+.for-whom__item {
+    position: relative;
+    padding-top: 70px;
+}
+
+.for-whom__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-40px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 115.8%;
+    color: #000000;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.for-whom__item:nth-of-type(1)::before {
+    background-image: url(../img/student.png);
+}
+
+.for-whom__item:nth-of-type(2)::before {
+    background-image: url(../img/sad.png);
+}
+
+.for-whom__item:nth-of-type(3)::before {
+    background-image: url(../img/it.png);
+}
+
+.for-whom__item:nth-of-type(4)::before {
+    background-image: url(../img/love.png);
+}
+
+.for-whom__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 115.8%;
+    color: #000000;
+    text-align: center;
+}
+
+.for-whom__description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #666666;
+}
+
+/* Founder */
+.founder__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    color: #000000;
+}
+
+.founder__name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.founder__photo {
+    border-radius: 4px;
+    border: none;
+    box-shadow: -8px 7px 0px 0px #FFD22E;
+    width: 304px;
+    margin: auto;
+    display: block;
+}
+
+.founder__experience {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 123.05%;
+    color: #666666;
+}
+
+.founder__experience_highlighting {
+    font-weight: 900;
+}
+
+.founder__students {
+    border-left: 8px solid #FFD22E;;
+}
+
+.founder__students-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 123.05%;
+    color: #000000; 
+    padding-left: 8px;
+}
+
+/* registration */
+.registration {
+    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.registration__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.you-too__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #000000;
+}
+
+.you-too__paragraph {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #666666;
+}
+
+
+/* media */
+@media (min-width: 1166px) {
+    .container {
+        margin: auto;
+    }
+}
+
