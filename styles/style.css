@@ -6,7 +6,7 @@ font-family: 'Roboto', sans-serif;
 body {
     margin: 0;
 }
-.container {
+.main-container {
     margin-left: 36px;
     margin-right: 36px;
     max-width: 1166px;
@@ -28,19 +28,55 @@ body {
     border-radius: 4px;
     background-color: #FFD22E;
     padding: 16px 0;
+    width: 312px;
     border: none;
     margin: auto;
     display: block;
 }
 
 /* Form */
+.form {
+    width: 312px;
+    margin: auto;
+}
 .form ._h1,
 .form ._h2._warn_title,
 .form ._lbl._lbl_day,
-.form ._lbl._lbl_time,
-.form.header-bottom__form input,
-.form.header-bottom__form input[type="text"] ~ div{
+.form ._lbl._lbl_time{
     display: none;
+}
+
+.form div:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+}
+
+.form div:nth-of-type(5) input {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.form div:nth-of-type(5) div:nth-of-type(1) {
+    order: 1;
+}
+
+.form div:nth-of-type(5) div:nth-of-type(1) label {
+    padding-left: 61px;
+    position: relative;
+}
+
+.form div:nth-of-type(5) div:nth-of-type(1) input {
+    position: absolute;
+    left: 0;
+}
+
+.error_box {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px; 
 }
 
 .form button[type="submit"] {
@@ -54,11 +90,11 @@ body {
     color: #000000;
     border-radius: 4px;
     background-color: #FFD22E;
-    padding: 16px 50px;
+    padding: 16px 0;
+    width: 312px;
     border: none;
     margin: auto;
     display: block;
-    width: 100%;
 }
 
 .form input[type="email"],
@@ -72,8 +108,8 @@ body {
 }
 
 .header-top {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 52px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -106,6 +142,7 @@ body {
     line-height: 26px;
     text-align: left;
     color: #FFD22E;
+    text-align: center;
 }
 
 .header-center__how {
@@ -119,6 +156,12 @@ body {
 
 .header-bottom {
     padding-bottom: 43px;
+    padding-top: 69px;
+}
+
+.form.header-bottom__form input,
+.form.header-bottom__form input[type="text"] ~ div{
+    display: none;
 }
 
 .knowledge-header {
@@ -128,11 +171,14 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #000000;
+    padding-top: 38px;
 }
 
 .knowledge-item {
     position: relative;
-    padding-top: 50px;
+    padding-top: 60px;
+    margin-top: 77px;
+    margin-bottom: 96px;
 }
 
 .knowledge-item:before {
@@ -193,6 +239,7 @@ body {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
     padding-top: 43px;
     padding-bottom: 50px;
+    margin-top: 165px;
 }
 
 .games__header {
@@ -205,20 +252,23 @@ body {
 }
 
 .games__description {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 115.8%;
     color: rgba(256, 256, 256, 0.8) ;
+    padding-top: 20px;
 }
 
 .games__img {
-    width: 100%;
+    width: 201px;
+    margin: auto;
+    display: block;
 }
 
 .games__button {
-    width: 100%;
+    margin-top: 102px;
 }
 
 /* Fow whom */
@@ -230,11 +280,14 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #000000;
+    padding-top: 61px;
 }
 
 .for-whom__item {
     position: relative;
-    padding-top: 70px;
+    padding-top: 80px;
+    margin-top: 102px;
+    margin-bottom: 20px;
 }
 
 .for-whom__item::before {
@@ -291,6 +344,10 @@ body {
 }
 
 /* Founder */
+.founder {
+    margin-top: 82px;
+    margin-bottom: 93px;
+}
 .founder__header {
     font-family: 'Roboto';
     font-style: normal;
@@ -307,6 +364,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin-top: 50px;
 }
 
 .founder__photo {
@@ -316,6 +374,7 @@ body {
     width: 304px;
     margin: auto;
     display: block;
+    margin-top: 41px;
 }
 
 .founder__experience {
@@ -325,6 +384,7 @@ body {
     font-size: 16px;
     line-height: 123.05%;
     color: #666666;
+    margin-top: 20px;
 }
 
 .founder__experience_highlighting {
@@ -349,7 +409,7 @@ body {
 .registration {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
 .registration__header {
@@ -359,7 +419,18 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #FFFFFF;
+    text-align: left;
     text-align: center;
+}
+
+.registration__form {
+    margin: auto;
+    margin-top: 39px;
+}
+
+/* you-too block */
+.you-too {
+    margin-top: 82px;
 }
 
 .you-too__header {
@@ -382,10 +453,92 @@ body {
     color: #666666;
 }
 
+/* Gallery */
+.you-too__carousel {
+    margin-bottom: 124px;
+    margin-top: 38px;
+}
+
+.carousel-indicators {
+    top: 117%;
+}
+
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: linear-gradient(245.96deg, #00297F -8.73%, #592982 114.68%);
+    border-radius: 202px;
+    border: none;
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+.carousel-control-next {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+    padding-bottom: 72px;
+}
+
+.footer-top__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 115.8%;
+    color: #FFFFFF; 
+    padding-top: 40px;
+    padding-bottom: 34px;
+    text-align: center;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+}
+
+.footer-bottom__support {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+.footer-bottom__privacy {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115.8%;
+    text-align: center;
+    text-decoration: underline;
+    color: #FFFFFF;
+    margin-top: 42px;
+    display: block;
+}
+
+.footer-bottom__by-students {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 28px;
+}
 
 /* media */
 @media (min-width: 1166px) {
-    .container {
+    .main-container {
         margin: auto;
     }
 }
