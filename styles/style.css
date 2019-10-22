@@ -34,6 +34,10 @@ body {
     display: block;
 }
 
+.button:hover {
+    background-color: #ffdc5a;
+}
+
 /* Form */
 .form {
     width: 312px;
@@ -47,7 +51,7 @@ body {
 }
 
 .form div:nth-of-type(5) {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 }
 
@@ -94,7 +98,11 @@ body {
     width: 312px;
     border: none;
     margin: auto;
-    display: block;
+    display: block !important;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #ffdc5a;
 }
 
 .form input[type="email"],
@@ -307,7 +315,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-40px);
+    transform: translateX(-50%);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -753,7 +761,7 @@ body {
     }
 
     .form div:nth-of-type(5) {
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
@@ -794,10 +802,10 @@ body {
 
     .games__img {
         position: absolute;
-        width: 430px;
-        height: 568px;
-        right: -472px;
-        top: -102px;
+        width: 787px;
+        height: 758px;
+        right: -573px;
+        top: -194px;
     }
 
     .games__header {
