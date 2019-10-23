@@ -112,9 +112,12 @@ body {
 }
 
 .header {
+    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+}
+
+.header .main-container {
     padding-top: 48px;
     padding-bottom: 43px;
-    background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
 }
 
 .header-top {
@@ -174,7 +177,6 @@ body {
 }
 
 .knowledge-block {
-    padding-top: 38px;
     margin-bottom: 165px;
 }
 
@@ -252,6 +254,7 @@ body {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
     padding-top: 43px;
     padding-bottom: 50px;
+    margin-bottom: 61px;
 }
 
 .games__header {
@@ -291,10 +294,6 @@ body {
 /* Fow whom */
 .for-whom {
     margin-bottom: 82px;
-}
-
-.for-whom .main-container {
-    padding-top: 61px;
 }
 
 .for-whom__top {
@@ -574,10 +573,6 @@ body {
 
 /* media */
 @media only screen and (min-width : 768px) {
-    .header {
-        padding-top: 75px;
-    }
-
     .header-top {
         margin-bottom: 112px;
     }
@@ -635,6 +630,10 @@ body {
         line-height: 115.8%;
     }
 
+    .games {
+        margin-bottom: 151px;
+    }
+
     .for-whom {
         margin-bottom: 112px;
     }
@@ -659,7 +658,6 @@ body {
     .for-whom__top {
         font-size: 40px;
         line-height: 115.8%;
-        padding-top: 151px;
     }
 
     .for-whom__header {
@@ -808,6 +806,10 @@ body {
 
     .form .error_box {
         order: 2;
+    }
+
+    .header .main-container {
+        padding-bottom: 0;
     }
 
     .knowledge-block {
