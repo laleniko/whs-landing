@@ -1,8 +1,3 @@
-/* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
- */
-
 body {
     margin: 0;
 }
@@ -17,7 +12,7 @@ body {
 }
 
 .button {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -77,14 +72,14 @@ body {
 }
 
 .error_box {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px; 
 }
 
 .form button[type="submit"] {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -113,6 +108,7 @@ body {
 
 .header {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
+    margin-bottom: 34px;
 }
 
 .header .main-container {
@@ -127,6 +123,11 @@ body {
     justify-content: space-between;
 }
 
+.header-top__logo {
+    width: 136px;
+    height: 37px;
+}
+
 .header-top__time {
     color: white;
     font-family: 'Montserrat';
@@ -135,6 +136,25 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: right;
+}
+
+.header-top__time ._h1,
+.header-top__time ._h2._warn_title,
+.header-top__time div:nth-of-type(5) {
+    display: none;
+}
+.header-top__time ._lbl._lbl_day {
+    display: block;
+    color: #FFD22E;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 115.8%;
+}
+.header-top__time ._lbl._lbl_time{
+    display: block;
 }
 
 .header-center {
@@ -152,22 +172,22 @@ body {
 }
 
 .header-center__plan {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 22.4559px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 115.8%;
     text-align: left;
     color: #FFD22E;
     text-align: center;
 }
 
 .header-center__how {
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 30.9922px;
-    line-height: 36px;
+    font-size: 26.99px;
+    line-height: 31px;
     color: #FFFFFF;
 }
 
@@ -181,10 +201,10 @@ body {
 }
 
 .knowledge-header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 115.8%;
     color: #000000;
     margin-bottom: 77px;
@@ -199,7 +219,7 @@ body {
 .knowledge-item:before {
     position: absolute;
     top: 0;
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
@@ -232,19 +252,19 @@ body {
 }
 
 .knowledge-item__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 115.8%;
     color: #000000;
 }
 
 .knowledge-item__description {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 115.8%;
     color: #666666;
 }
@@ -258,10 +278,10 @@ body {
 }
 
 .games__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 115.8%;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -276,10 +296,10 @@ body {
 }
 
 .games__description {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 115.8%;
     color: rgba(256, 256, 256, 0.8) ;
 }
@@ -297,10 +317,10 @@ body {
 }
 
 .for-whom__top {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 115.8%;
     color: #000000;
     margin-bottom: 102px;
@@ -318,7 +338,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
@@ -347,20 +367,20 @@ body {
 }
 
 .for-whom__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 115.8%;
     color: #000000;
     text-align: center;
 }
 
 .for-whom__description {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 115.8%;
     text-align: center;
     color: #666666;
@@ -371,21 +391,25 @@ body {
     margin-bottom: 93px;
 }
 .founder__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 115.8%;
     color: #000000;
     margin-bottom: 41px;
 }
 
+.founder__header-logo {
+    display: none;
+}
+
 .founder__name {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 27px;
     color: #000000;
 }
 
@@ -400,10 +424,10 @@ body {
 }
 
 .founder__experience {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 123.05%;
     color: #666666;
     margin-bottom: 20px;
@@ -414,14 +438,14 @@ body {
 }
 
 .founder__students {
-    border-left: 8px solid #FFD22E;;
+    border-left: 8px solid #FFD22E;
 }
 
 .founder__students-item {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 123.05%;
     color: #000000; 
     padding-left: 8px;
@@ -436,10 +460,10 @@ body {
 }
 
 .registration__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 115.8%;
     color: #FFFFFF;
     text-align: left;
@@ -454,20 +478,20 @@ body {
 /* you-too block */
 
 .you-too__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 115.8%;
     text-align: center;
     color: #000000;
 }
 
 .you-too__paragraph {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 115.8%;
     text-align: center;
     color: #666666;
@@ -522,10 +546,10 @@ body {
 }
 
 .footer-top__header {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 115.8%;
     color: #FFFFFF; 
     padding-top: 40px;
@@ -538,10 +562,10 @@ body {
 }
 
 .footer-bottom__support {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 115.8%;
     text-align: center;
     color: #FFFFFF; 
@@ -549,10 +573,10 @@ body {
 }
 
 .footer-bottom__privacy {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 115.8%;
     text-align: center;
     text-decoration: underline;
@@ -562,10 +586,10 @@ body {
 }
 
 .footer-bottom__by-students {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 115.8%;
     text-align: center;
     color: #FFFFFF;
@@ -575,6 +599,11 @@ body {
 @media only screen and (min-width : 768px) {
     .header-top {
         margin-bottom: 112px;
+    }
+
+    .header-top__logo {
+        width: 153px;
+        height: 42px;
     }
 
     .header-center {
@@ -609,7 +638,7 @@ body {
     }
 
     .knowledge-header {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 115.8%;
     }
 
@@ -626,7 +655,7 @@ body {
     }
 
     .knowledge-item__header {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 115.8%;
     }
 
@@ -656,13 +685,13 @@ body {
     }
 
     .for-whom__top {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 115.8%;
     }
 
     .for-whom__header {
-        font-size: 24px;
-        line-height: 115.8%; 
+        font-size: 22px;
+        line-height: 115.8%;
     }
 
     .founder {
@@ -670,8 +699,18 @@ body {
     }
 
     .founder__header {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 115.8%;
+        display: flex;
+    }
+
+    .founder__header .text-color-accent {
+        display: none;
+    }
+
+    .founder__header-logo {
+        display: block;
+        margin-left: 20px;
     }
 
     .founder-container {
@@ -688,12 +727,12 @@ body {
     }
 
     .founder__name {
-        font-size: 32px;
-        line-height: 37px;
+        font-size: 28px;
+        line-height: 34px;
     }
 
     .founder__experience {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 123.05%;
     }
 
@@ -706,7 +745,7 @@ body {
     }
 
     .founder__students-item {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 123.05%;
     }
 
@@ -724,7 +763,7 @@ body {
     }
 
     .you-too__header {
-        font-size: 40px;
+        font-size: 36px;
         line-height: 115.8%;
     }
 
@@ -766,11 +805,28 @@ body {
 
     .footer-top__header {
         padding-top: 61px;
+        font-size: 32px;
+        line-height: 115.8%;
     }
 
     .footer-bottom {
         max-width: 798px;
         margin: auto;
+    }
+
+    .footer-bottom__support {
+        font-size: 20px;
+        line-height: 115.8%;
+    }
+
+    .footer-bottom__privacy {
+        font-size: 16px;
+        line-height: 115.8%;
+    }
+    
+    .footer-bottom__by-students {
+        font-size: 16px;
+        line-height: 115.8%;
     }
 }
 @media (min-width: 1166px) {
