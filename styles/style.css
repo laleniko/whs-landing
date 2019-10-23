@@ -112,12 +112,13 @@ body {
 }
 
 .header {
+    padding-top: 48px;
+    padding-bottom: 43px;
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
 }
 
 .header-top {
-    padding-top: 48px;
-    padding-bottom: 52px;
+    margin-bottom: 52px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -135,6 +136,7 @@ body {
 
 .header-center {
     position: relative;
+    margin-bottom: 69px;
 }
 
 .header-center__free {
@@ -166,14 +168,14 @@ body {
     color: #FFFFFF;
 }
 
-.header-bottom {
-    padding-bottom: 43px;
-    padding-top: 69px;
-}
-
 .form.header-bottom__form input,
 .form.header-bottom__form input[type="text"] ~ div{
     display: none;
+}
+
+.knowledge-block {
+    padding-top: 38px;
+    margin-bottom: 165px;
 }
 
 .knowledge-header {
@@ -183,13 +185,12 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #000000;
-    padding-top: 38px;
+    margin-bottom: 77px;
 }
 
 .knowledge-item {
     position: relative;
     padding-top: 60px;
-    margin-top: 77px;
     margin-bottom: 96px;
 }
 
@@ -251,7 +252,6 @@ body {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
     padding-top: 43px;
     padding-bottom: 50px;
-    margin-top: 165px;
 }
 
 .games__header {
@@ -261,6 +261,7 @@ body {
     font-size: 30px;
     line-height: 115.8%;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .games__header_finger-bottom {
@@ -278,20 +279,23 @@ body {
     font-size: 18px;
     line-height: 115.8%;
     color: rgba(256, 256, 256, 0.8) ;
-    padding-top: 20px;
 }
 
 .games__img {
     width: 201px;
     margin: auto;
     display: block;
-}
-
-.games__button {
-    margin-top: 102px;
+    margin-bottom: 102px;
 }
 
 /* Fow whom */
+.for-whom {
+    margin-bottom: 82px;
+}
+
+.for-whom .main-container {
+    padding-top: 61px;
+}
 
 .for-whom__top {
     font-family: 'Roboto';
@@ -300,14 +304,13 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #000000;
-    padding-top: 61px;
+    margin-bottom: 102px;
 }
 
 .for-whom__item {
     position: relative;
     padding-top: 80px;
-    margin-top: 102px;
-    margin-bottom: 20px;
+    margin-bottom: 102px;
 }
 
 .for-whom__item::before {
@@ -366,7 +369,6 @@ body {
 
 /* Founder */
 .founder {
-    margin-top: 82px;
     margin-bottom: 93px;
 }
 .founder__header {
@@ -376,6 +378,7 @@ body {
     font-size: 32px;
     line-height: 115.8%;
     color: #000000;
+    margin-bottom: 41px;
 }
 
 .founder__name {
@@ -385,7 +388,6 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin-top: 50px;
 }
 
 .founder__photo {
@@ -395,7 +397,7 @@ body {
     width: 304px;
     margin: auto;
     display: block;
-    margin-top: 41px;
+    margin-bottom: 50px;
 }
 
 .founder__experience {
@@ -405,7 +407,7 @@ body {
     font-size: 16px;
     line-height: 123.05%;
     color: #666666;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .founder__experience_highlighting {
@@ -431,6 +433,7 @@ body {
     background: linear-gradient(219deg, #00297F -8.73%, #592982 114.68%);
     padding-top: 40px;
     padding-bottom: 32px;
+    margin-bottom: 82px;
 }
 
 .registration__header {
@@ -442,17 +445,14 @@ body {
     color: #FFFFFF;
     text-align: left;
     text-align: center;
+    margin-bottom: 39px;
 }
 
 .registration__form {
     margin: auto;
-    margin-top: 39px;
 }
 
 /* you-too block */
-.you-too {
-    margin-top: 82px;
-}
 
 .you-too__header {
     font-family: 'Roboto';
@@ -472,12 +472,12 @@ body {
     line-height: 115.8%;
     text-align: center;
     color: #666666;
+    margin-bottom: 38px;
 }
 
 /* Gallery */
 .you-too__carousel {
     margin-bottom: 124px;
-    margin-top: 38px;
 }
 
 .carousel-item {
@@ -534,8 +534,8 @@ body {
     text-align: center;
 }
 
-.footer-bottom {
-    margin-top: 50px;
+.footer-top {
+    margin-bottom: 50px;
 }
 
 .footer-bottom__support {
@@ -546,6 +546,7 @@ body {
     line-height: 115.8%;
     text-align: center;
     color: #FFFFFF; 
+    margin-bottom: 42px;
 }
 
 .footer-bottom__privacy {
@@ -557,8 +558,8 @@ body {
     text-align: center;
     text-decoration: underline;
     color: #FFFFFF;
-    margin-top: 42px;
     display: block;
+    margin-bottom: 28px;
 }
 
 .footer-bottom__by-students {
@@ -569,14 +570,16 @@ body {
     line-height: 115.8%;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 28px;
 }
 
 /* media */
 @media only screen and (min-width : 768px) {
-    .header-top {
+    .header {
         padding-top: 75px;
-        padding-bottom: 112px;
+    }
+
+    .header-top {
+        margin-bottom: 112px;
     }
 
     .header-center {
@@ -606,10 +609,13 @@ body {
         padding-top: 125px;
     }
 
+    .knowledge-block {
+        padding-top: 80px;
+    }
+
     .knowledge-header {
         font-size: 40px;
         line-height: 115.8%;
-        padding-top: 80px;
     }
 
     .knowledge-items {
@@ -621,8 +627,7 @@ body {
 
     .knowledge-item {
         width: 345px;
-        margin-bottom: 0;
-        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .knowledge-item__header {
@@ -630,12 +635,15 @@ body {
         line-height: 115.8%;
     }
 
+    .for-whom {
+        margin-bottom: 112px;
+    }
+
     .for-whom__items {
         display: flex;
         flex-direction: row;
     }
     .for-whom__item {
-        margin-top: 17px;
         margin-right: 20px;
     }
 
@@ -660,7 +668,6 @@ body {
     }
 
     .founder {
-        margin-top: 112px;
         margin-bottom: 60px;
     }
 
@@ -705,9 +712,12 @@ body {
         line-height: 123.05%;
     }
 
+    .registration {
+        margin-bottom: 118px;
+    }
+
     .you-too {
         margin: auto;
-        margin-top: 118px;
         max-width: 1166px;
     }
 
@@ -763,7 +773,6 @@ body {
     .footer-bottom {
         max-width: 798px;
         margin: auto;
-        margin-top: 50px;
     }
 }
 @media (min-width: 1166px) {
@@ -801,12 +810,15 @@ body {
         order: 2;
     }
 
+    .knowledge-block {
+        margin-bottom: 145px;
+    }
+
     .games {
         width: 1166px;
         margin: auto;
         border-radius: 17px;
         padding-bottom: 60px;
-        margin-top: 145px;
     }
 
     .games .main-container {
@@ -831,6 +843,7 @@ body {
     .games__description {
         font-size: 24px;
         line-height: 115.8%;
+        margin-bottom: 48px;
     }
 
     .games__header_finger-bottom {
@@ -842,7 +855,6 @@ body {
     }
 
     .games__button {
-        margin-top: 48px;
         margin-left: 0;
         margin-right: auto;
         width: 241px;
@@ -850,7 +862,8 @@ body {
 
     .registration {
         width: 1166px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 17px;
     }
 
@@ -858,7 +871,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 30px;
     }
 
     .footer-bottom__privacy {
