@@ -147,14 +147,18 @@ body {
     display: block;
     color: #FFD22E;
     margin-bottom: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 115.8%;
+    padding-top: 10px;
 }
 .header-top__time ._lbl._lbl_time{
     display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
 }
 
 .header-center {
@@ -166,8 +170,8 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: calc( (100vw - 375px)/(1920 - 375) * (120 - 33) + 33px);
-    line-height: calc( (100vw - 375px)/(1920 - 375) * (115 - 33) + 33px);
+    font-size: calc( (100vw - 375px)/(1920 - 375) * (160 - 33) + 33px);
+    line-height: calc( (100vw - 375px)/(1920 - 375) * (145 - 33) + 33px);
     color: rgba(256, 256, 256, 0.1);
 }
 
@@ -197,7 +201,7 @@ body {
 }
 
 .knowledge-block {
-    margin-bottom: 165px;
+    margin-bottom: 196px;
 }
 
 .knowledge-header {
@@ -212,8 +216,8 @@ body {
 
 .knowledge-item {
     position: relative;
-    padding-top: 60px;
-    margin-bottom: 96px;
+    padding-top: 72px;
+    margin-bottom: 115px;
 }
 
 .knowledge-item:before {
@@ -301,14 +305,22 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 115.8%;
-    color: rgba(256, 256, 256, 0.8) ;
+    color: rgba(256, 256, 256, 0.8);
+}
+
+.games__img-container {
+    height: 404px;
+    position: relative;
 }
 
 .games__img {
-    width: 201px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 374px;
+    height: 457px;
     margin: auto;
     display: block;
-    margin-bottom: 102px;
 }
 
 /* Fow whom */
@@ -613,13 +625,14 @@ body {
     .header-center {
         width: 735px;
         margin: auto;
-        margin-bottom: 125px;
+        margin-bottom: 137px;
     }
     .header-center__free {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
     }
 
     .header-center__plan {
@@ -657,6 +670,7 @@ body {
     .knowledge-item__header {
         font-size: 18px;
         line-height: 115.8%;
+        min-height: 80px;
     }
 
     .games {
@@ -664,7 +678,11 @@ body {
     }
 
     .for-whom {
-        margin-bottom: 112px;
+        margin-bottom: 31px;
+    }
+
+    .for-whom__top {
+        margin-bottom: 34px;
     }
 
     .for-whom__items {
@@ -863,8 +881,13 @@ body {
         order: 2;
     }
 
-    .header .main-container {
+    .header {
         padding-bottom: 0;
+    }
+
+    .header .main-container {
+        padding-top: 70px;
+        padding-bottom: 43px;
     }
 
     .knowledge-block {
@@ -874,6 +897,7 @@ body {
     .games {
         width: 1166px;
         margin: auto;
+        margin-bottom: 151px;
         border-radius: 17px;
         padding-bottom: 60px;
     }
@@ -884,21 +908,19 @@ body {
         margin-right: 446px;
     }
 
-    .games__img {
+    .games__img-container {
         position: absolute;
-        width: 787px;
-        height: 758px;
-        right: -573px;
-        top: -194px;
+        right: -234px;
+        top: -50px;
     }
 
     .games__header {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 115.8%;
     }
 
     .games__description {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 115.8%;
         margin-bottom: 48px;
     }
@@ -936,6 +958,18 @@ body {
 
     .footer-bottom__by-students {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .games__img-container {
+        right: -250px;
+        top: -239px;
+    }
+
+    .games__img {
+        width: 613px;
+        height: 817px;
     }
 }
 
