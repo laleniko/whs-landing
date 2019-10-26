@@ -1,6 +1,13 @@
 body {
     margin: 0;
 }
+
+input:focus,
+input:hover,
+input:active {
+    outline: none;
+}
+
 .main-container {
     margin-left: 36px;
     margin-right: 36px;
@@ -9,12 +16,13 @@ body {
 
 .text-color-accent {
     color: #FFD22E;
+    padding-left: 10px;
 }
 
 .button {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 14px;
     line-height: 115.8%;
     text-align: center;
@@ -27,10 +35,15 @@ body {
     border: none;
     margin: auto;
     display: block;
+    outline: none;
 }
 
 .button:hover {
     background-color: #ffdc5a;
+}
+
+.button:active, .button:focus {
+    outline: none;
 }
 
 /* Form */
@@ -55,6 +68,7 @@ body {
     border-radius: 4px;
     border: none;
     margin-bottom: 15px;
+    padding-left: 20px;
 }
 
 .form div:nth-of-type(5) div:nth-of-type(1) {
@@ -62,7 +76,7 @@ body {
 }
 
 .form div:nth-of-type(5) div:nth-of-type(1) label {
-    padding-left: 61px;
+    padding-left: 37px;
     position: relative;
 }
 
@@ -81,7 +95,7 @@ body {
 .form button[type="submit"] {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 14px;
     line-height: 115.8%;
     text-align: center;
@@ -94,10 +108,15 @@ body {
     border: none;
     margin: auto;
     display: block !important;
+    outline: none;
 }
 
 .form button[type="submit"]:hover {
     background-color: #ffdc5a;
+}
+
+.form button[type="submit"]:active, .form button[type="submit"]:focus{
+    outline: none;
 }
 
 .form input[type="email"],
@@ -170,8 +189,8 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: calc( (100vw - 375px)/(1920 - 375) * (160 - 33) + 33px);
-    line-height: calc( (100vw - 375px)/(1920 - 375) * (145 - 33) + 33px);
+    font-size: 33px;
+    line-height: 33px;
     color: rgba(256, 256, 256, 0.1);
 }
 
@@ -195,11 +214,6 @@ body {
     color: #FFFFFF;
 }
 
-.form.header-bottom__form input,
-.form.header-bottom__form input[type="text"] ~ div{
-    display: none;
-}
-
 .knowledge-block {
     margin-bottom: 196px;
 }
@@ -207,7 +221,7 @@ body {
 .knowledge-header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 28px;
     line-height: 115.8%;
     color: #000000;
@@ -225,7 +239,7 @@ body {
     top: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 54px;
     line-height: 115.8%;
     color: #000000;
@@ -258,7 +272,7 @@ body {
 .knowledge-item__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 18px;
     line-height: 115.8%;
     color: #000000;
@@ -284,7 +298,7 @@ body {
 .games__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 26px;
     line-height: 115.8%;
     color: #FFFFFF;
@@ -331,7 +345,7 @@ body {
 .for-whom__top {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 28px;
     line-height: 115.8%;
     color: #000000;
@@ -381,7 +395,7 @@ body {
 .for-whom__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 22px;
     line-height: 115.8%;
     color: #000000;
@@ -405,21 +419,17 @@ body {
 .founder__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 26px;
     line-height: 115.8%;
     color: #000000;
     margin-bottom: 41px;
 }
 
-.founder__header-logo {
-    display: none;
-}
-
 .founder__name {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 22px;
     line-height: 27px;
     color: #000000;
@@ -438,7 +448,7 @@ body {
 .founder__experience {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     line-height: 123.05%;
     color: #666666;
@@ -446,7 +456,7 @@ body {
 }
 
 .founder__experience_highlighting {
-    font-weight: 900;
+    color: black;
 }
 
 .founder__students {
@@ -474,7 +484,7 @@ body {
 .registration__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 28px;
     line-height: 115.8%;
     color: #FFFFFF;
@@ -492,7 +502,7 @@ body {
 .you-too__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 28px;
     line-height: 115.8%;
     text-align: center;
@@ -561,7 +571,7 @@ body {
 .footer-top__header {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 28px;
     line-height: 115.8%;
     color: #FFFFFF; 
@@ -582,6 +592,12 @@ body {
     text-align: center;
     color: #FFFFFF; 
     margin-bottom: 42px;
+}
+
+.footer-bottom__support-link:hover,
+.footer-bottom__support-link:focus,
+.footer-bottom__support-link:active {
+    text-decoration: none;
 }
 
 .footer-bottom__privacy {
@@ -611,10 +627,11 @@ body {
 @media only screen and (min-width : 768px) {
     .header {
         padding-bottom: 44px;
+        margin-bottom: 86px;
     }
 
     .header-top {
-        margin-bottom: 112px;
+        margin-bottom: 42px;
     }
 
     .header-top__logo {
@@ -633,6 +650,12 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        font-size: calc( (100vw - 768px)/(1920 - 768) * (160 - 33) + 40px);
+    line-height: calc( (100vw - 768px)/(1920 - 768) * (145 - 33) + 40px);
+    }
+
+    .header-center__free_hidden {
+        display: none;
     }
 
     .header-center__plan {
@@ -644,10 +667,6 @@ body {
         text-align: center;
         font-size: 44px;
         line-height: 115.8%;
-    }
-
-    .knowledge-block {
-        padding-top: 80px;
     }
 
     .knowledge-header {
@@ -720,15 +739,6 @@ body {
         font-size: 34px;
         line-height: 115.8%;
         display: flex;
-    }
-
-    .founder__header .text-color-accent {
-        display: none;
-    }
-
-    .founder__header-logo {
-        display: block;
-        margin-left: 20px;
     }
 
     .founder-container {
@@ -866,11 +876,6 @@ body {
     .form div:nth-of-type(5) input {
         width: 239px;
         margin: 0;
-    }
-
-    .form.header-bottom__form input,
-    .form.header-bottom__form input[type="text"] ~ div{
-        display: block;
     }
 
     .form button[type="submit"] {
