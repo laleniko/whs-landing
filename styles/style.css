@@ -762,6 +762,8 @@ input:active {
     .founder__photo {
         margin-right: 90px;
         margin-left: 0;
+        height: 456px;
+        margin-top: 0;
     }
 
     .founder-text {
