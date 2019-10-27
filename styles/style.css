@@ -21,7 +21,6 @@ input:active {
 
 .text-color-accent {
     color: #FFD22E;
-    padding-left: 10px;
 }
 
 .button {
@@ -432,6 +431,10 @@ input:active {
     text-align: center;
 }
 
+.founder__header .text-color-accent {
+    padding-left: 10px;
+}
+
 .for-whom__description {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -478,10 +481,10 @@ input:active {
 .founder__experience {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     line-height: 123.05%;
-    color: #666666;
+    color: black;
     margin-bottom: 8px;
 }
 
@@ -490,7 +493,7 @@ input:active {
 }
 
 .founder__experience_highlighting {
-    color: black;
+    font-weight: bold;
 }
 
 .founder__students {
